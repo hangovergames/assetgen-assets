@@ -22,14 +22,14 @@ Actual prices may differ if you re-generate with new models or larger sizes.
    git submodule update --init
    ```
 
-2. **Inspect the spec**—each project has an `instructions.md` describing the
+2. **Inspect the spec**—each project has an `Assetgenfile` describing the
    global prompt, per-asset prompts and any per-run configuration.
 
 3. **Re-generate** (optional):
 
    ```bash
    # inside the project folder (e.g. citygame/)
-   assetgen -n 10 instructions.md
+   assetgen -n 10 Assetgenfile
    ```
 
 4. **Optimise** (optional): after generation we run `optipng -o7 *.png`
@@ -40,7 +40,7 @@ Actual prices may differ if you re-generate with new models or larger sizes.
 Have a cool spec you want to share?
 
 1. Fork the repo, create a new folder (e.g. `space-shooter/`).
-2. Commit your `instructions.md`, the generated images and a small README
+2. Commit your `Assetgenfile`, the generated images and a small README
    noting the API cost.
 3. Open a pull request 🚀
 

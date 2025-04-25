@@ -13,7 +13,7 @@ to drop into a tile-based city builder or traffic sim.
 
 ### Generation details
 
-* **Spec file:** [`instructions.md`](./instructions.md)
+* **Spec file:** [`Assetgenfile`](./Assetgenfile)
 * **Model:** `gpt-image-1`
 * **Size:** `1024 × 1024`
 * **Cost:** **$ 5.48** in OpenAI usage (April 2025 pricing)
@@ -25,7 +25,7 @@ to drop into a tile-based city builder or traffic sim.
 # From repo root
 cd citygame
 rm *.png
-assetgen instructions.md -c 32          # or smaller batches with -c 5
+assetgen Assetgenfile -c 32          # or smaller batches with -c 5
 ```
 
 The script will skip images that already exist, so you can experiment with new
